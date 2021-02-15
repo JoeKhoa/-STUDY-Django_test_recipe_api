@@ -1,0 +1,16 @@
+# version of docker-compose
+version: "3" 
+
+services: 
+    app:
+        build: 
+            # set current directory to build (where Dockerfile)
+            context: . 
+        ports:
+            # docker:local
+            - "8500:8500"
+        volumes: 
+            - ./app:/app
+        # shell command
+        command: >
+            sh -c "python manage.py runserver 0.0.0.0:8500"
