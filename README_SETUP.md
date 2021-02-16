@@ -19,6 +19,30 @@ To_test
 
 
 
-   # NOTE
+   # NOTE SKILL PYTHON, DJANGO, ALGO OR CLEAN CODE
 
    
+
+
+
+ 
+DJANGO
+
+UserModel
+    Custom username with email  
+
+setting.py
+    declare : AUTH_USER_MODEL
+    app used
+
+
+TestCase 
+    self.assertEqual()
+    self.assertTrue()
+
+BaseUserManager
+    validation_email
+    self.normalize_email # may normalize more, plz view form
+    user.save(using=self._db)
+
+
